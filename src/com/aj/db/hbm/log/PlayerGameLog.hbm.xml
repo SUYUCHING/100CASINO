@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="com.aj.db.domain.log.PlayerGameLog" table="t_player_game_log" >
+    <id name="id" column="f_id" type="long" >
+     <generator class="sequence">
+		  <param name="sequence">seq_player_game_log_id</param>
+       </generator>
+    </id>
+    
+	<property name="betAmt" type="big_decimal"  column="f_bet_amt" />
+	<property name="winLose" type="big_decimal"  column="f_win_lose" />
+	<property name="createDate" type="timestamp"  column="f_create_date" />
+	
+	<property name="playerId" type="string"  column="f_player_id" />
+	<property name="gameRefId" type="long"  column="f_game_ref_id" />
+	<property name="redId" type="long"  column="f_ref_id" />
+	
+
+	
+  </class>
+</hibernate-mapping>
