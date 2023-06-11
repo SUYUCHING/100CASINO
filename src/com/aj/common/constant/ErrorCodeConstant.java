@@ -2,7 +2,7 @@ package com.aj.common.constant;
 
 public class ErrorCodeConstant {
 
-	
+	     
 	public static final String LABEL_CODE = "code";
 	public static final String LABEL_DESC = "description";
 	public static final String LABEL_RESULT = "result";
